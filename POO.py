@@ -9,13 +9,13 @@ class Empleado:
     def calcular_salario(self):
         return self.salario_base
 # PASO 2: Se crean las clases hijas usando herencia
-class EmpleadoTiempoCompleto-Empleado:
+class EmpleadoTiempoCompleto(Empleado):
     def __init__(self, nombre, salario_base, bono):
         super().__init__(nombre, salario_base)
         self.bono = bono
     def calcular_salario(self):
         return self.salario_base + self.bono
-class EmpleadoMedioTiempo-Empleado:
+class EmpleadoMedioTiempo(Empleado):
     def __init__(self, nombre, horas_trabajadas, tarifa_hora):
         super().__init__(nombre, 0)
         self.horas_trabajadas = horas_trabajadas
